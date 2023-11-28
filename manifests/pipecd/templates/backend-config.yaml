@@ -8,6 +8,8 @@ spec:
     enabled: {{ .Values.backendConfig.iap.enabled }}
     oauthclientCredentials:
       secretName: {{ .Values.backendConfig.iap.secretName }}
+  securityPolicy:
+    name: {{ .Values.backendConfig.securityPolicy.name }}
 {{- end }}
 
 {{ if .Values.monitoring.backendConfig.enabled -}}

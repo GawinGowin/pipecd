@@ -136,6 +136,8 @@ backendConfig:
   iap:
     enabled: false
     secretName: pipecd-iap
+  securityPolicy:
+    name: 
 
 managedCertificate:
   enabled: false
